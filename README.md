@@ -25,19 +25,19 @@ After the pre-reqs are complete just open any of the ipynb files and run the cel
 
 The Notebooks folder contains all the python notebooks, here's what each of them hold : 
 
-### initialNotebook 
+#### initialNotebook 
 This is the most basic first implementation. Has a lot of comments for a new user to understand what goes on in a RAG pipeline
 
-### testingAlternatives and testingAlternatives2
+#### testingAlternatives and testingAlternatives2
 These two files mimic what was done in the initialNotebook but is experimenting with different text-splitters, models, file-types etc
 
-### onePrinterFile and multiplePrinterFiles
+#### onePrinterFile and multiplePrinterFiles
 These are notebooks for a very specific usecase and a particular set of files that I wanted to test the model on. As the names suggest one uses only one pdf file while the latter uses 7-8 pdf files as a knowledge base for the RAG model
 
-### holdingConversation and holdingConversationSelf
+#### holdingConversation and holdingConversationSelf
 These are notebooks where there's no RAG, we are just trying to keep the LLMs chat history with us intact so that it can answer questions based on the previous conversation as well. The first file utilises langchain libraries while the latter is a more straight forward approach of keeping the chat history maintained
 
-### ragWithConversation
+#### ragWithConversation
 Trying to integrate the RAG POC and the POCs for holding conversations with an LLM and trying to combine both to give a RAG which is capable of remembering it's conversation with the user 
 
 ## Data Folder 
