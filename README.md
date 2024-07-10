@@ -48,3 +48,6 @@ The data folder just contains data on which the RAG models are trained
 
 This folder contains all of the vector embeddings for the different data used in the RAG models. I've kept them stored in local so that we don't have to train the models again and again since it's time consuming
 
+## RAGChats Folder
+
+Contains text files which hold the chat history of a few successfull runs with the RAG model that has convesational capabilities
