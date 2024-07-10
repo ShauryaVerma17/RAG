@@ -21,7 +21,9 @@ You also need to have Ollama running on your local with "llama3" and "mxbai-embe
 
 After the pre-reqs are complete just open any of the ipynb files and run the cells (Shift + Enter)
 
-## Different Notebooks available in the project 
+## Notebooks Folder 
+
+The Notebooks folder contains all the python notebooks, here's what each of them hold : 
 
 ### initialNotebook 
 This is the most basic first implementation. Has a lot of comments for a new user to understand what goes on in a RAG pipeline
@@ -37,4 +39,12 @@ These are notebooks where there's no RAG, we are just trying to keep the LLMs ch
 
 ### ragWithConversation
 Trying to integrate the RAG POC and the POCs for holding conversations with an LLM and trying to combine both to give a RAG which is capable of remembering it's conversation with the user 
+
+## Data Folder 
+
+The data folder just contains data on which the RAG models are trained
+
+## VectorStores Folder
+
+This folder contains all of the vector embeddings for the different data used in the RAG models. I've kept them stored in local so that we don't have to train the models again and again since it's time consuming
 
