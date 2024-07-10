@@ -13,7 +13,7 @@ To run this repo using VS code you will need to first run a few commands. Here a
    #### 2. Running the virtual environment
        .venv\scripts\activate
    #### 3. Installing all the required libraries into the virtual environment
-       pip install langchain langchain_community faiss-cpu pymupdf docarray unstructured
+       pip install langchain langchain_community faiss-cpu pymupdf docarray unstructured tiktoken
 
 You also need to have Ollama running on your local with "llama3" and "mxbai-embed-large". If you want to use other models you can change the code to reflect the same :) 
 
