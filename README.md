@@ -40,6 +40,9 @@ These are notebooks where there's no RAG, we are just trying to keep the LLMs ch
 #### ragWithConversation
 Trying to integrate the RAG POC and the POCs for holding conversations with an LLM and trying to combine both to give a RAG which is capable of remembering it's conversation with the user 
 
+#### rudeChatbot
+Talk to that guy at your own risk
+
 ## Data Folder 
 
 The data folder just contains data on which the RAG models are trained
