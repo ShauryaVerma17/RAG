@@ -16,6 +16,16 @@ To run this repo using VS code you will need to first run a few commands. Here a
        pip install langchain langchain_community faiss-cpu pymupdf docarray unstructured tiktoken
 
 You also need to have Ollama running on your local with "llama3" and "mxbai-embed-large". If you want to use other models you can change the code to reflect the same :) 
+To run ollama follow these steps : 
+
+1. Download the ollama installer for windows from the ollama website
+2. Run the installer :D
+3. Once installation is complete open cmdprmpt or powershell whichever you prefer and run the following commands : (Here you can download any model you want by replacing the names in the command)
+
+   #### 1. To install llama3
+         ollama pull llama3
+   #### 2. To install mxbai-embed-large
+         ollama pull mxbai-embed-large
 
 ## Runnning stuff 
 
