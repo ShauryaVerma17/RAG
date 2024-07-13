@@ -65,3 +65,7 @@ This folder contains all of the vector embeddings for the different data used in
 ## Chats Folder
 
 Contains text files which hold the chat history of a few successfull runs with the models that have convesational capabilities
+
+## Azure
+
+This folder contains the method to call an Azure OpenAI service hosted on... well, Azure. There's 2 subfolders one contains the code to talk to a gpt model, the other is to make calls to Dalle3 (It doesn't work since we don't have working endppoints and keys, but the syntax is available if you wanna learn)
