@@ -28,7 +28,7 @@ To run ollama follow these steps :
    #### 2. To install mxbai-embed-large
          ollama pull mxbai-embed-large
 
-## Runnning stuff 
+## Running stuff 
 
 After the pre-reqs are complete just open any of the ipynb files and run the cells (Shift + Enter)
 
