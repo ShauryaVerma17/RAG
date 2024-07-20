@@ -83,3 +83,5 @@ This folder contains the method to call an Azure OpenAI service hosted on... wel
 
 #### Using zrok 
       zrock share public http://localhost:3000/
+
+Copy and share the url to access the ui :D
