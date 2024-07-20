@@ -77,6 +77,7 @@ This folder contains the method to call an Azure OpenAI service hosted on... wel
       http://localhost:11434/
 
 #### Start docker open webui container 
+      http://localhost:3000/
 
 #### Using ngrock (Open ngrok.exe for cli to open)
       ngrok http 3000
