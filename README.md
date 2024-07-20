@@ -83,6 +83,6 @@ This folder contains the method to call an Azure OpenAI service hosted on... wel
       ngrok http 3000
 
 #### Using zrok (Make sure .exe is in ...AppData\Local\Microsoft\WindowsApps)
-      zrock share public http://localhost:3000/
+      zrok share public http://localhost:3000/
 
 Copy and share the url to access the ui :D
