@@ -31,10 +31,21 @@ To run ollama follow these steps :
 ## Running stuff 
 
 After the pre-reqs are complete just open any of the ipynb files and run the cells (Shift + Enter)
+## Apps
+
+This folder contains any full-stack python apps I may create for RAG
+
+#### wikiRAG
+It is a fully functioning RAG application where a user can provide a wikipedia url, and then ask questions about that article
+###### To run this app, navigate to the Apps folder in the terminal and then use the folloqing command
+      streamlit run wikiRAG.py
 
 ## Notebooks Folder 
 
 The Notebooks folder contains all the python notebooks, here's what each of them hold : 
+
+#### creatingVectorStores
+This notebook is to create vector stores using 2 different embedding models and store them into a local folder withing the project. These indexes are then used in the other notebooks to prevent re-embedding of the data again and again
 
 #### initialNotebook 
 This is the most basic first implementation. Has a lot of comments for a new user to understand what goes on in a RAG pipeline
@@ -48,11 +59,17 @@ These are notebooks for a very specific usecase and a particular set of files th
 #### holdingConversation and holdingConversationSelf
 These are notebooks where there's no RAG, we are just trying to keep the LLMs chat history with us intact so that it can answer questions based on the previous conversation as well. The first file utilises langchain libraries while the latter is a more straight forward approach of keeping the chat history maintained
 
-#### ragWithConversation
+#### ragWithConversation and ragWithConversation2
 Trying to integrate the RAG POC and the POCs for holding conversations with an LLM and trying to combine both to give a RAG which is capable of remembering it's conversation with the user 
 
 #### rudeChatbot
 Talk to that guy at your own risk
+
+#### webBasedRAG and webBasedRAG2
+These are still in progress, basically you enter any url and it scrapes the webpage to enable asking questions about the contents of the webpage
+
+#### wikiRAG
+This is a notebook which can be used to ask questions about any wiki article 
 
 ## Data Folder 
 
