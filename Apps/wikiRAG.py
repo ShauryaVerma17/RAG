@@ -17,7 +17,7 @@ if 'setup_complete' not in st.session_state:
 if 'documents' not in st.session_state:
     st.session_state['documents'] = None
 if 'chat_history' not in st.session_state:
-    st.session_state['chat_history'] = ['','','','','','']
+    st.session_state['chat_history'] = [('',''),('',''),('',''),('',''),('',''),('','')]
 if 'url' not in st.session_state:
     st.session_state['url'] = ""
 if 'query' not in st.session_state:
@@ -94,7 +94,7 @@ prompt = PromptTemplate.from_template(template)
 
 # Method for getting last 3 questions and answers from chat history into a string 
 def getChat():
-    return "\nQuestion : " + st.session_state['chat_history'][-6] + "\nAnswer : " + st.session_state['chat_history'][-5] + "\nQuestion : " + st.session_state['chat_history'][-4] + "\nAnswer : " + st.session_state['chat_history'][-3] + "\nQuestion : " + st.session_state['chat_history'][-2] + "\nAnswer : " + st.session_state['chat_history'][-1]
+    return "\nQuestion : " + st.session_state['chat_history'][-6][-1] + "\nAnswer : " + st.session_state['chat_history'][-5][-1] + "\nQuestion : " + st.session_state['chat_history'][-4][-1] + "\nAnswer : " + st.session_state['chat_history'][-3][-1] + "\nQuestion : " + st.session_state['chat_history'][-2][-1] + "\nAnswer : " + st.session_state['chat_history'][-1][-1]
 
 # Method for calling the chat
 def chat(question): 
@@ -105,8 +105,8 @@ def chat(question):
     
     response = st.session_state['model'].invoke(query)
     
-    st.session_state['chat_history'].append(question)
-    st.session_state['chat_history'].append(response)
+    st.session_state['chat_history'].append(("User",question))
+    st.session_state['chat_history'].append(("Assistant",response))
 
     return response
 
@@ -160,12 +160,12 @@ with streamlit_analytics.track():
     
     # Sidebar for chat history
     st.sidebar.title("Chat History")
-    for role, message in st.session_state['chat_history']:
-        st.sidebar.text(f"{role}: {message}")
+    for (user,message) in st.session_state['chat_history'][6:]:
+        st.sidebar.text(f"{user}:{message}")
     
     # Clear chat history button in sidebar
     if st.sidebar.button("Clear Chat History"):
-        st.session_state['chat_history'] = ['','','','','','']
+        st.session_state['chat_history'] = [('',''),('',''),('',''),('',''),('',''),('','')]
         st.sidebar.success("Chat history cleared!")
 
 #endregion
