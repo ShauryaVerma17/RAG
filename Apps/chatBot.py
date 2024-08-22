@@ -64,6 +64,3 @@ st.sidebar.title("Chat History Controls")
 if st.sidebar.button("Clear Chat History"):
     st.session_state['chat'] = [{"role": "user", "content": ""},{"role": "assistant", "content": ""},{"role": "user", "content": ""},{"role": "assistant", "content": ""},{"role": "user", "content": ""},{"role": "assistant", "content": ""}]
     st.sidebar.success("Chat history cleared!")
-    for message in st.session_state['chat'][6:]:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
